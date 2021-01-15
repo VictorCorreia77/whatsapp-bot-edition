@@ -460,7 +460,7 @@ module.exports = HandleMsg = async (aruga, message) => {
             break
         case 'stikergiphy':
         case 'stickergiphy':
-            if (args.length !== 1) return aruga.reply(from, Desculpe, o formato da mensagem está errado.\nDigite a mensagem com` ${prefix}stickergiphy <link_giphy>`, id)
+            if (args.length !== 1) return aruga.reply(from, 'Desculpe, o formato da mensagem está errado.\nDigite a mensagem com` ${prefix}stickergiphy <link_giphy>`, id)
             const isGiphy = url.match(new RegExp(/https?:\/\/(www\.)?giphy.com/, 'gi'))
             const isMediaGiphy = url.match(new RegExp(/https?:\/\/media.giphy.com\/media/, 'gi'))
             if (isGiphy) {
